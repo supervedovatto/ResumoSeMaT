@@ -1,0 +1,74 @@
+%
+%  Modelo com instruções para preparação do resumo para submissão de trabalho
+%  para apresentação em Sessão Técnica no XXVI CNMAC
+%
+%
+
+\documentclass[a4,10pt]{article}
+\usepackage{amsfonts, amsmath}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{fancyhdr, graphicx, epsfig}
+
+\newcommand{\headrulecolor}[1]{\patchcmd{\headrule}{\hrule}{\color{#1}\hrule}{}{}}
+\renewcommand{\headrulewidth}{0.5pt}
+\fancyhead[R]{}
+\fancyhead[C]{
+	\begin{minipage}{3cm}
+	\includegraphics[height=2cm]{logo_goiania}
+	\end{minipage}
+\begin{minipage}{12.5cm}
+    \begin{flushright}
+	\includegraphics[height=1.5cm]{logo_semat}
+    \end{flushright}
+\end{minipage}
+}
+
+\pagenumbering{gobble}
+\headheight 20mm      %
+\oddsidemargin 2.0mm  %
+\evensidemargin 2.0mm %
+\topmargin -25mm      %
+\textheight 250mm     %
+\textwidth 160mm      %
+
+\begin{document}
+
+\title{\Large{\bf Título do Trabalho}\footnote{este trabalho conta com apoio dinanceiro de ...}}
+\author{ {\bf {\large Tal, Fulano de}}\\
+ {\small \{Instituto, faculdade, departamento e/ou câmpus\},  \{SIGLA DA INSTITUIÇÃO\}} \\
+  {\small email@im.ufnt.br} \\
+ {\bf {\large Silva, Ciclano José da}}  \\
+ {\small \{Instituto, faculdade, departamento e/ou câmpus\},  \{SIGLA DA INSTITUIÇÃO\}} \\
+  {\small email@iffrt.edu.br}}
+%\date{}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introdução}
+
+Aqui deve-você faz a introdução do trabalho.
+
+\section{Desenvolvimento}
+corpo do trabalho
+
+\section{Considerações Finais}
+Breve considerações sobre o trabalho
+
+\begin{thebibliography}{99}
+
+\bibitem{key1} BURGER, M.; HACKL, B.; RING, W. \emph{Incorporating topological derivatives
+into level set methods}. Journal of Computational Physics, v. 194, n. 1, p. 344-362,
+2004.
+
+
+\bibitem{hig}  LITTLE, R. W. \emph{Elasticity}. New Jersey: Prentice-Hall, 1973.
+
+\end{thebibliography}
+
+\end{document}
